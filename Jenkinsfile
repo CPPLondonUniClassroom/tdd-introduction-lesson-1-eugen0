@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 dir('build') {
-                    sh 'test/unittests -r junit -o result.xml'
+                    bat 'test/unittests -r junit -o result.xml'
                 }
             }
             post {
